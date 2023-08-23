@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Mochi Punchi</title>
+  </head>
+  <body>
+    <main>
+      <!-- #game-intro is initially shown on the game start screen -->
+      <!-- block 1-->
+      <div id="game-intro">
+        <img src="./images/logo.png" alt="" class="logo-img" />
+        <br />
+        <button id="start-button">Get Mochi!</button>
+         <!--  delete: <p>Use the left and right arrow to control the car!</p> 
+        <img src="./images/arrows.png" alt="" class="arrows-img" />-->
+       
+      </div>
+      <!-- block 2-->
+      <div id="game-container">
+        
+        <!-- #game-screen is initially hidden using CSS style display: none -->
+        <div id="game-screen">
+          <!-- status -->
+          <div>
+            <aside class ="panel control">Stats
+            <h2>My Power</h2>
+            <p>Punch: <span id="score">0</span></p>
+            <p>Miss: <span id="lives">3</span></p> 
+            <p>Time: <span id="lives">3</span></p>
+          </aside>
+          </div>
+
+          <!-- mole board  & btn active event -->
+          <div class="board">
+            <div class="mole btn active" data-index="0"></div>
+            <div class="mole btn active" data-index="1"></div>
+            <div class="mole btn active" data-index="2"></div>
+            <div class="mole btn active" data-index="3"></div>
+            <div class="mole btn active" data-index="4"></div>
+            <div class="mole btn active" data-index="5"></div>
+            <div class="mole btn active" data-index="6"></div>
+            <div class="mole btn active" data-index="7"></div>
+            <div class="mole btn active" data-index="8"></div>
+        </div>
+        </div>
+      </div>
+
+      <!-- #game-end is initially hidden using CSS style display: none -->
+      <!-- block 3-->
+      <div id="game-end">
+        <img src="./images/logo.png" alt="" class="logo-img" />
+        <h1>Punch Over</h1>
+        <br />
+        <button id="restart-button">Punch it Again!</button>
+      </div>
+    </main>
+    <!-- player use the obstacle so, it should be TOP -->
+    <script type="text/javascript" src="js/mole.js"></script> 
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
